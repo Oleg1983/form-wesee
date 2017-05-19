@@ -1,0 +1,16 @@
+$rem:                           14px !default;
+$rem--small:                    10px !default;
+
+@function rem($target, $context: $rem) {
+  @if $target == 0 { @return 0 }
+  @return ($target + 0px) / ($context + 0px) + 0rem;
+}
+
+$green: #40d299;
+$dark-green: #32a377;
+$grey: #5a5a5a;
+$light-grey: #5a8a95;
+$light-blue: #57b8cc;
+$blue: #317280;
+$blue-img: #3d8592;
+$dark-blue: #1e444d;

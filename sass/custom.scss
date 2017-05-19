@@ -1,0 +1,71 @@
+@import "variables";
+@import "mixins/basic";
+@import "parts/header";
+@import "parts/impact";
+@import "parts/program";
+@import "parts/project";
+@import "parts/footer";
+@import "parts/create";
+
+body, body.navbar-is-fixed-top {
+  padding-top: 115px !important;
+  font-family: 'Roboto', sans-serif;
+  color: $grey;
+}
+
+/* Style for top image */
+.padding-0 {
+  padding: 0;
+}
+.cover-img {
+  img {
+    width: 100%;
+  }
+
+  height: 160px;
+  overflow: hidden;
+}
+
+.header-bg {
+  background: $green;
+  padding: 15px 0;
+
+  h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    font-size: 43px;
+    text-shadow: 0px 1px 2px rgba(27, 48, 96, 0.4);
+  }
+}
+
+.header-bg-activities {
+  background: $blue;
+  @include box-shadow();
+
+  h3 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 32px;
+  }
+}
+
+/*Invest button*/
+.button-green {
+  border: none;
+  background: $green;
+  color: #ffffff;
+  display: inline-block;
+  padding: 7px 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $blue;
+  }
+}
